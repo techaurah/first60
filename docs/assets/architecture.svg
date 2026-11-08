@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="712" viewBox="0 0 1240 712" role="img" aria-label="First60 architecture at build step 1: entry points, the CLI, the built pack loader, five TOML packs, and the stub packages planned for later build steps">
+<rect width="1240" height="712" rx="18" fill="#0B1F3A"/>
+<text x="48" y="52" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="24" font-weight="700" fill="#EAF6FF">First60 architecture</text>
+<text x="48" y="80" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#9DB8D2">What exists today, at build step 1 of 7 (v0.1.0 skeleton). Zero runtime dependencies, stdlib only, Python 3.11+.</text>
+<rect x="48" y="104" width="250" height="176" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="68" y="140" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#EAF6FF">ENTRY POINTS</text>
+<text x="68" y="168" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">first60 console script</text>
+<text x="68" y="191" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">python -m first60</text>
+<text x="68" y="214" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">__main__.py calls cli.main()</text>
+<line x1="298" y1="192" x2="330" y2="192" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="330,186 340,192 330,198" fill="#00CEFF"/>
+<text x="318.0" y="182" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#00CEFF" text-anchor="middle">run</text>
+<rect x="346" y="104" width="300" height="176" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="366" y="140" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#EAF6FF">cli.py · BUILT</text>
+<text x="366" y="168" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">argparse parser and dispatch</text>
+<text x="366" y="191" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">--help and --version work</text>
+<text x="366" y="214" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">demo, serve, summary, init</text>
+<text x="366" y="237" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">are stubs (exit code 2)</text>
+<line x1="646" y1="192" x2="678" y2="192" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="678,186 688,192 678,198" fill="#00CEFF"/>
+<text x="666.0" y="182" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#00CEFF" text-anchor="middle">loads packs</text>
+<rect x="694" y="104" width="498" height="176" rx="12" fill="#12294D" stroke="#00CEFF" stroke-width="2"/>
+<text x="714" y="140" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#00CEFF">config.py · BUILT: PACK LOADER</text>
+<text x="714" y="168" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">load_pack() and load_builtin_pack(), stdlib tomllib only</text>
+<text x="714" y="191" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">Dataclasses: BusinessPack, Service, QualifyingQuestion,</text>
+<text x="714" y="214" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">FollowUpPolicy, HandoffRules</text>
+<text x="714" y="237" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">Strict validation: services, questions, hours, follow-up,</text>
+<text x="714" y="260" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">handoff, booking. PackError names the broken field.</text>
+<rect x="694" y="308" width="498" height="118" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="714" y="344" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#EAF6FF">packs/ · FIVE VALIDATED TOML PACKS</text>
+<text x="714" y="372" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">dental: BrightSmile Dental (fictional demo business)</text>
+<text x="714" y="395" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">plumber · med-spa · clinic · real-estate</text>
+<text x="714" y="418" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">Each: services, questions, hours, follow-up policy, emergency terms</text>
+<line x1="943" y1="308" x2="943" y2="284" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="937,292 943,282 949,292" fill="#00CEFF"/>
+<text x="955" y="302" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#00CEFF">validated on load</text>
+<text x="48" y="452" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#EAF6FF">Designed modules, present today as documented stub packages</text>
+<rect x="48" y="468" width="216" height="118" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5" stroke-dasharray="7 5"/>
+<text x="68" y="504" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#EAF6FF">pipeline/</text>
+<text x="68" y="532" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">Step 2: pure core</text>
+<text x="68" y="555" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">stages, scoring,</text>
+<text x="68" y="578" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">extraction, qualify</text>
+<rect x="280" y="468" width="216" height="118" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5" stroke-dasharray="7 5"/>
+<text x="300" y="504" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#EAF6FF">store/</text>
+<text x="300" y="532" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">Step 3: store</text>
+<text x="300" y="555" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">store protocol, SQLite</text>
+<text x="300" y="578" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">and in-memory</text>
+<rect x="512" y="468" width="216" height="118" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5" stroke-dasharray="7 5"/>
+<text x="532" y="504" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#EAF6FF">calendar/</text>
+<text x="532" y="532" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">Step 3: calendar</text>
+<text x="532" y="555" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">business hours, busy</text>
+<text x="532" y="578" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">blocks, booking</text>
+<rect x="744" y="468" width="216" height="118" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5" stroke-dasharray="7 5"/>
+<text x="764" y="504" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#EAF6FF">respond/</text>
+<text x="764" y="532" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">Step 4: responders</text>
+<text x="764" y="555" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">template responder,</text>
+<text x="764" y="578" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">optional LLM phrasing</text>
+<rect x="976" y="468" width="216" height="118" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5" stroke-dasharray="7 5"/>
+<text x="996" y="504" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#EAF6FF">channels/</text>
+<text x="996" y="532" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">Step 5: channels</text>
+<text x="996" y="555" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">webhook, console,</text>
+<text x="996" y="578" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">simulated, follow-ups</text>
+<text x="48" y="622" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">Design rule, from the code: rules decide, responders only phrase. An LLM never decides; its output is validated before sending.</text>
+<text x="48" y="648" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">tests/: 29 test cases (pack loader validation in test_config.py, import and CLI smoke tests in test_imports.py). CI (.github/workflows/ci.yml): pytest, ruff, mypy, Python 3.11 and 3.12.</text>
+<text x="48" y="682" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#00CEFF">Built today: entry points, CLI shell, pack loader, five packs, tests, CI. Everything else above is design, staged by build step.</text>
+</svg>

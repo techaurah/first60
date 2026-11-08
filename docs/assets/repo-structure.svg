@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="833" viewBox="0 0 1180 833" role="img" aria-label="First60 repository structure">
+<rect width="1180" height="833" rx="18" fill="#0B1F3A"/>
+<text x="44" y="50" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#EAF6FF">Repository structure</text>
+<text x="44" y="84" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="700" fill="#00CEFF">first60/</text>
+<text x="44" y="111" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">├─ README.md</text>
+<text x="182" y="111" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">project overview, build progress, roadmap</text>
+<text x="44" y="138" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">├─ CHANGELOG.md</text>
+<text x="210" y="138" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">what shipped, by version</text>
+<text x="44" y="165" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">├─ CONTRIBUTING.md</text>
+<text x="238" y="165" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">how to contribute</text>
+<text x="44" y="192" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">├─ SECURITY.md</text>
+<text x="200" y="192" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">how to report a vulnerability</text>
+<text x="44" y="219" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">├─ LICENSE</text>
+<text x="163" y="219" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">MIT</text>
+<text x="44" y="246" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">├─ pyproject.toml</text>
+<text x="228" y="246" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">packaging, zero dependencies, tool config</text>
+<text x="44" y="273" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">├─ packs/</text>
+<text x="154" y="273" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">one TOML business pack per vertical</text>
+<text x="44" y="300" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">│   ├─ dental.toml</text>
+<text x="238" y="300" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">BrightSmile Dental (fictional demo business)</text>
+<text x="44" y="327" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">│   ├─ plumber.toml</text>
+<text x="247" y="327" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">SwiftFlow Plumbing</text>
+<text x="44" y="354" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">│   ├─ med-spa.toml</text>
+<text x="247" y="354" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">GlowHaven Med Spa</text>
+<text x="44" y="381" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">│   ├─ clinic.toml</text>
+<text x="238" y="381" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">Harborview Family Clinic</text>
+<text x="44" y="408" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">│   └─ real-estate.toml</text>
+<text x="284" y="408" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">Keystone Homes Realty</text>
+<text x="44" y="435" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">├─ src/first60/</text>
+<text x="210" y="435" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">the package (src layout)</text>
+<text x="44" y="462" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">│   ├─ __init__.py</text>
+<text x="238" y="462" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">package docstring, __version__ 0.1.0</text>
+<text x="44" y="489" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">│   ├─ __main__.py</text>
+<text x="238" y="489" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">python -m first60 entry point</text>
+<text x="44" y="516" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">│   ├─ cli.py</text>
+<text x="191" y="516" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">argparse CLI: help and version live, 4 commands stubbed</text>
+<text x="44" y="543" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">│   ├─ config.py</text>
+<text x="219" y="543" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">pack loader and strict validation (the built core)</text>
+<text x="44" y="570" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">│   ├─ pipeline/</text>
+<text x="219" y="570" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">pure core: stages, scoring, extraction (step 2, stub today)</text>
+<text x="44" y="597" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">│   ├─ store/</text>
+<text x="191" y="597" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">store protocol, SQLite and in-memory (step 3, stub today)</text>
+<text x="44" y="624" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">│   ├─ calendar/</text>
+<text x="219" y="624" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">local calendar and booking (step 3, stub today)</text>
+<text x="44" y="651" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">│   ├─ respond/</text>
+<text x="210" y="651" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">template and optional LLM responders (step 4, stub today)</text>
+<text x="44" y="678" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">│   └─ channels/</text>
+<text x="219" y="678" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">webhook, console, simulated channels (step 5, stub today)</text>
+<text x="44" y="705" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">├─ tests/</text>
+<text x="154" y="705" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">pytest suite, runs offline</text>
+<text x="44" y="732" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">│   ├─ test_config.py</text>
+<text x="266" y="732" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">pack loader and validation tests (24 test cases)</text>
+<text x="44" y="759" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">│   └─ test_imports.py</text>
+<text x="275" y="759" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">import and CLI smoke tests (5 test cases)</text>
+<text x="44" y="786" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15.5" font-weight="400" fill="#EAF6FF">└─ .github/workflows/ci.yml</text>
+<text x="322" y="786" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">pytest, ruff, mypy on Python 3.11 and 3.12</text>
+</svg>

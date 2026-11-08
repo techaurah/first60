@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="500" viewBox="0 0 1240 500" role="img" aria-label="The First60 loop: reply, qualify, score, book, follow up, hand off, summarise">
+<rect width="1240" height="500" rx="18" fill="#0B1F3A"/>
+<text x="48" y="52" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="24" font-weight="700" fill="#EAF6FF">The First60 loop</text>
+<text x="48" y="80" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#9DB8D2">The designed workflow from the README. The engine lands in build steps 2 to 6; build step 1 (the packs it runs on) is built.</text>
+<rect x="48" y="116" width="258" height="128" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="177.0" y="150" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16.5" font-weight="700" fill="#EAF6FF" text-anchor="middle">ENQUIRY ARRIVES</text>
+<text x="177.0" y="176" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">A text enquiry lands:</text>
+<text x="177.0" y="198" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">DM, WhatsApp-style</text>
+<text x="177.0" y="220" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">message or web form</text>
+<line x1="306" y1="180" x2="334" y2="180" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="334,174 344,180 334,186" fill="#00CEFF"/>
+<rect x="342" y="116" width="258" height="128" rx="12" fill="#12294D" stroke="#00CEFF" stroke-width="2"/>
+<text x="471.0" y="150" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16.5" font-weight="700" fill="#00CEFF" text-anchor="middle">1 · REPLY</text>
+<text x="471.0" y="176" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">Instant first reply with</text>
+<text x="471.0" y="198" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">a next step, inside</text>
+<text x="471.0" y="220" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">60 seconds</text>
+<line x1="600" y1="180" x2="628" y2="180" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="628,174 638,180 628,186" fill="#00CEFF"/>
+<rect x="636" y="116" width="258" height="128" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="765.0" y="150" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16.5" font-weight="700" fill="#EAF6FF" text-anchor="middle">2 · QUALIFY</text>
+<text x="765.0" y="176" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">Ask the pack&#x27;s</text>
+<text x="765.0" y="198" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">questions, in</text>
+<text x="765.0" y="220" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">pack order</text>
+<line x1="894" y1="180" x2="922" y2="180" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="922,174 932,180 922,186" fill="#00CEFF"/>
+<rect x="930" y="116" width="258" height="128" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="1059.0" y="150" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16.5" font-weight="700" fill="#EAF6FF" text-anchor="middle">3 · SCORE</text>
+<text x="1059.0" y="176" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">Deterministic score:</text>
+<text x="1059.0" y="198" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">HOT 80-100, WARM 65-79,</text>
+<text x="1059.0" y="220" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">NURTURE 50-64, LOW &lt;50</text>
+<line x1="1059" y1="244" x2="1059" y2="278" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="1053,270 1059,282 1065,270" fill="#00CEFF"/>
+<rect x="48" y="284" width="258" height="128" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="177.0" y="318" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16.5" font-weight="700" fill="#EAF6FF" text-anchor="middle">7 · SUMMARISE</text>
+<text x="177.0" y="344" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">Daily pipeline summary:</text>
+<text x="177.0" y="366" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">stages, bands, bookings,</text>
+<text x="177.0" y="388" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">overdue, handed off</text>
+
+
+<rect x="342" y="284" width="258" height="128" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="471.0" y="318" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16.5" font-weight="700" fill="#EAF6FF" text-anchor="middle">6 · HAND OFF</text>
+<text x="471.0" y="344" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">Emergency terms, a</text>
+<text x="471.0" y="366" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">complaint, or the lead</text>
+<text x="471.0" y="388" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">asks for a human</text>
+<line x1="342" y1="348" x2="314" y2="348" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="314,342 304,348 314,354" fill="#00CEFF"/>
+<rect x="636" y="284" width="258" height="128" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="765.0" y="318" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16.5" font-weight="700" fill="#EAF6FF" text-anchor="middle">5 · FOLLOW UP</text>
+<text x="765.0" y="344" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">Touches at +4h, +24h,</text>
+<text x="765.0" y="366" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">+72h; max 3; only inside</text>
+<text x="765.0" y="388" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">08:00 to 21:00</text>
+<line x1="636" y1="348" x2="608" y2="348" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="608,342 598,348 608,354" fill="#00CEFF"/>
+<rect x="930" y="284" width="258" height="128" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="1059.0" y="318" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16.5" font-weight="700" fill="#EAF6FF" text-anchor="middle">4 · BOOK</text>
+<text x="1059.0" y="344" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">Against business hours</text>
+<text x="1059.0" y="366" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">and busy blocks, re-checked</text>
+<text x="1059.0" y="388" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2" text-anchor="middle">at booking time</text>
+<text x="48" y="452" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">Safety, from the README: STOP or unsubscribe wording ends all touches for that conversation.</text><text x="48" y="478" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">Every outbound message passes a write-mode gate (direct, dry-run or approval) and writes an audit row.</text>
+<line x1="930" y1="348" x2="902" y2="348" stroke="#00CEFF" stroke-width="2.5"/><polygon points="902,342 892,348 902,354" fill="#00CEFF"/></svg>
