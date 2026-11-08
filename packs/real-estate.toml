@@ -1,0 +1,87 @@
+# Keystone Homes Realty - fictional business pack for First60.
+# No real business data. Used by the pack tests.
+
+[business]
+name = "Keystone Homes Realty"
+vertical = "real-estate"
+timezone = "America/New_York"
+currency = "USD"
+
+[[services]]
+name = "Property viewing"
+duration_minutes = 60
+value_tier = "high"
+description = "In-person viewing of a listed property."
+
+[[services]]
+name = "Valuation appointment"
+duration_minutes = 45
+value_tier = "high"
+description = "Visit to value your home for sale."
+
+[[services]]
+name = "Buyer consultation"
+duration_minutes = 30
+value_tier = "standard"
+description = "Talk through budget, area and what you are looking for."
+
+[[services]]
+name = "Rental viewing"
+duration_minutes = 30
+value_tier = "standard"
+description = "Viewing of a rental property."
+
+[[services]]
+name = "Virtual tour"
+duration_minutes = 30
+value_tier = "low"
+description = "Video walkthrough of a property."
+
+[[questions]]
+id = "service"
+text = "Are you looking to buy, sell, rent, or view a property?"
+required = true
+
+[[questions]]
+id = "timeline"
+text = "When would you like to meet or view?"
+required = true
+
+[[questions]]
+id = "budget"
+text = "What is your approximate budget range?"
+required = false
+
+[[questions]]
+id = "name"
+text = "What is your name?"
+required = true
+
+[[questions]]
+id = "contact"
+text = "What is the best phone number or email to reach you on?"
+required = true
+
+[hours]
+monday = { open = "09:00", close = "18:00" }
+tuesday = { open = "09:00", close = "18:00" }
+wednesday = { open = "09:00", close = "18:00" }
+thursday = { open = "09:00", close = "18:00" }
+friday = { open = "09:00", close = "18:00" }
+saturday = { open = "10:00", close = "16:00" }
+sunday = { closed = true }
+
+[followups]
+touch_delays_hours = [4, 24, 72]
+max_touches = 3
+waking_window_start = "08:00"
+waking_window_end = "21:00"
+
+[handoff]
+emergency_terms = ["urgent viewing today", "offer deadline today"]
+emergency_instruction = "This is time-sensitive. A member of the team will contact you as soon as possible, and you can also reach the office during opening hours."
+handoff_only = ["legal question", "offer negotiation", "contract question"]
+
+[booking]
+slot_minutes = 30
+confirmation_required = true
