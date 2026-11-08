@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="1051" viewBox="0 0 1180 1051" role="img" aria-label="Real First60 CLI output at build step 1 of 7: version, help, all five business packs passing strict validation, and the demo command reporting not built yet">
+<rect width="1180" height="1051" rx="18" fill="#0B1F3A"/>
+<line x1="0" y1="54" x2="1180" y2="54" stroke="#2A5A8F" stroke-width="1"/>
+<circle cx="34" cy="27" r="6" fill="#3D5A80"/>
+<circle cx="56" cy="27" r="6" fill="#00CEFF"/>
+<circle cx="78" cy="27" r="6" fill="#3D5A80"/>
+<text xml:space="preserve" x="110" y="34" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16.5" font-weight="700" fill="#EAF6FF">What runs today: build step 1 of 7</text>
+<text xml:space="preserve" x="1136" y="34" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#9DB8D2" text-anchor="end">real output, not a mock-up</text>
+<text xml:space="preserve" x="44" y="96" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5"><tspan fill="#00CEFF" font-weight="700">$ </tspan><tspan fill="#EAF6FF">first60 --version</tspan></text>
+<text xml:space="preserve" x="44" y="119" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">first60 0.1.0</text>
+<text xml:space="preserve" x="44" y="165" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5"><tspan fill="#00CEFF" font-weight="700">$ </tspan><tspan fill="#EAF6FF">first60 --help</tspan></text>
+<text xml:space="preserve" x="44" y="188" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">usage: first60 [-h] [--version] COMMAND ...</text>
+<text xml:space="preserve" x="44" y="234" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">First60: an open-source text-first AI receptionist for service businesses.</text>
+<text xml:space="preserve" x="44" y="257" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">Every text enquiry gets a first reply with a next step inside 60 seconds.</text>
+<text xml:space="preserve" x="44" y="303" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">positional arguments:</text>
+<text xml:space="preserve" x="44" y="326" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">  COMMAND</text>
+<text xml:space="preserve" x="44" y="349" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">    demo      Run the zero-credential demo scenario (build step 6).</text>
+<text xml:space="preserve" x="44" y="372" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">    serve     Serve the webhook channel (build step 5).</text>
+<text xml:space="preserve" x="44" y="395" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">    summary   Print the daily pipeline summary (build step 6).</text>
+<text xml:space="preserve" x="44" y="418" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">    init      Create a starter business pack (build step 7).</text>
+<text xml:space="preserve" x="44" y="464" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">options:</text>
+<text xml:space="preserve" x="44" y="487" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">  -h, --help  show this help message and exit</text>
+<text xml:space="preserve" x="44" y="510" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">  --version   show program&#x27;s version number and exit</text>
+<text xml:space="preserve" x="44" y="556" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5"><tspan fill="#00CEFF" font-weight="700">$ </tspan><tspan fill="#EAF6FF">python - &lt;&lt;&#x27;EOF&#x27;</tspan></text>
+<text xml:space="preserve" x="44" y="579" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#9DB8D2">&gt; from first60.config import builtin_pack_names, load_builtin_pack</text>
+<text xml:space="preserve" x="44" y="602" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#9DB8D2">&gt;</text>
+<text xml:space="preserve" x="44" y="625" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#9DB8D2">&gt; names = builtin_pack_names()</text>
+<text xml:space="preserve" x="44" y="648" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#9DB8D2">&gt; for name in names:</text>
+<text xml:space="preserve" x="44" y="671" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#9DB8D2">&gt;     p = load_builtin_pack(name)</text>
+<text xml:space="preserve" x="44" y="694" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#9DB8D2">&gt;     print(f&quot;OK  {p.name} ({p.vertical}): {len(p.services)} services, &quot;</text>
+<text xml:space="preserve" x="44" y="717" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#9DB8D2">&gt;           f&quot;{len(p.questions)} questions, slot {p.slot_minutes} min&quot;)</text>
+<text xml:space="preserve" x="44" y="740" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#9DB8D2">&gt; print(f&quot;{len(names)} of {len(names)} packs passed strict validation&quot;)</text>
+<text xml:space="preserve" x="44" y="763" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#9DB8D2">EOF</text>
+<text xml:space="preserve" x="44" y="786" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">OK  Harborview Family Clinic (clinic): 5 services, 5 questions, slot 15 min</text>
+<text xml:space="preserve" x="44" y="809" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">OK  BrightSmile Dental (dental): 5 services, 5 questions, slot 30 min</text>
+<text xml:space="preserve" x="44" y="832" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">OK  GlowHaven Med Spa (med-spa): 5 services, 5 questions, slot 30 min</text>
+<text xml:space="preserve" x="44" y="855" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">OK  SwiftFlow Plumbing (plumber): 6 services, 5 questions, slot 60 min</text>
+<text xml:space="preserve" x="44" y="878" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">OK  Keystone Homes Realty (real-estate): 5 services, 5 questions, slot 30 min</text>
+<text xml:space="preserve" x="44" y="901" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">5 of 5 packs passed strict validation</text>
+<text xml:space="preserve" x="44" y="947" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5"><tspan fill="#00CEFF" font-weight="700">$ </tspan><tspan fill="#EAF6FF">first60 demo</tspan></text>
+<text xml:space="preserve" x="44" y="970" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14.5" fill="#B9D2E8">first60 demo: not built yet (see the build steps in DESIGN.md section 14).</text>
+<text xml:space="preserve" x="44" y="1019" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">Every line above is real output from the step 1 code. The conversation engine, booking and demo land in later build steps.</text>
+</svg>
