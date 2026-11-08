@@ -1,0 +1,87 @@
+# BrightSmile Dental - fictional demo business for First60.
+# No real business data. Used by the demo scenario and the pack tests.
+
+[business]
+name = "BrightSmile Dental"
+vertical = "dental"
+timezone = "Europe/London"
+currency = "GBP"
+
+[[services]]
+name = "Check-up and clean"
+duration_minutes = 30
+value_tier = "standard"
+description = "Routine examination and hygiene clean."
+
+[[services]]
+name = "Emergency appointment"
+duration_minutes = 30
+value_tier = "high"
+description = "Same-day appointment for pain, swelling or damage."
+
+[[services]]
+name = "Crown fitting"
+duration_minutes = 60
+value_tier = "high"
+description = "Fitting a crown for a damaged or weakened tooth."
+
+[[services]]
+name = "Teeth whitening"
+duration_minutes = 45
+value_tier = "standard"
+description = "In-practice whitening treatment."
+
+[[services]]
+name = "New patient consultation"
+duration_minutes = 30
+value_tier = "low"
+description = "First visit, meet the team and discuss your needs."
+
+[[questions]]
+id = "service"
+text = "Which treatment are you interested in?"
+required = true
+
+[[questions]]
+id = "timeline"
+text = "When would you like to come in?"
+required = true
+
+[[questions]]
+id = "name"
+text = "What is your name?"
+required = true
+
+[[questions]]
+id = "contact"
+text = "What is the best phone number or email to reach you on?"
+required = true
+
+[[questions]]
+id = "pain"
+text = "Are you in pain at the moment, or is anything swollen?"
+required = false
+
+[hours]
+monday = { open = "09:00", close = "17:30" }
+tuesday = { open = "09:00", close = "17:30" }
+wednesday = { open = "09:00", close = "17:30" }
+thursday = { open = "09:00", close = "17:30" }
+friday = { open = "09:00", close = "17:00" }
+saturday = { open = "09:00", close = "13:00" }
+sunday = { closed = true }
+
+[followups]
+touch_delays_hours = [4, 24, 72]
+max_touches = 3
+waking_window_start = "08:00"
+waking_window_end = "21:00"
+
+[handoff]
+emergency_terms = ["severe pain", "swelling", "bleeding", "knocked out tooth", "face swelling"]
+emergency_instruction = "This sounds urgent. Please contact your dentist or local urgent dental service right away, or seek urgent care if the swelling affects your breathing."
+handoff_only = ["insurance claim", "complaint about treatment"]
+
+[booking]
+slot_minutes = 30
+confirmation_required = true

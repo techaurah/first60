@@ -1,0 +1,87 @@
+# Harborview Family Clinic - fictional business pack for First60.
+# No real business data. Used by the pack tests.
+
+[business]
+name = "Harborview Family Clinic"
+vertical = "clinic"
+timezone = "America/New_York"
+currency = "USD"
+
+[[services]]
+name = "Same-day sick visit"
+duration_minutes = 30
+value_tier = "high"
+description = "Visit for a new illness or worsening symptoms."
+
+[[services]]
+name = "Annual physical"
+duration_minutes = 45
+value_tier = "standard"
+description = "Yearly check-up and preventive screening."
+
+[[services]]
+name = "Vaccination"
+duration_minutes = 15
+value_tier = "low"
+description = "Routine vaccination appointment."
+
+[[services]]
+name = "Blood test"
+duration_minutes = 15
+value_tier = "low"
+description = "Lab blood draw, fasting instructions given at booking."
+
+[[services]]
+name = "Follow-up consultation"
+duration_minutes = 30
+value_tier = "standard"
+description = "Follow-up on an earlier visit or test results."
+
+[[questions]]
+id = "service"
+text = "What do you need to see us about?"
+required = true
+
+[[questions]]
+id = "timeline"
+text = "When would you like to come in?"
+required = true
+
+[[questions]]
+id = "name"
+text = "What is your full name?"
+required = true
+
+[[questions]]
+id = "contact"
+text = "What is the best phone number to reach you on?"
+required = true
+
+[[questions]]
+id = "symptoms"
+text = "Can you briefly describe your symptoms?"
+required = false
+
+[hours]
+monday = { open = "08:00", close = "18:00" }
+tuesday = { open = "08:00", close = "18:00" }
+wednesday = { open = "08:00", close = "18:00" }
+thursday = { open = "08:00", close = "18:00" }
+friday = { open = "08:00", close = "17:00" }
+saturday = { open = "09:00", close = "13:00" }
+sunday = { closed = true }
+
+[followups]
+touch_delays_hours = [4, 24, 72]
+max_touches = 3
+waking_window_start = "08:00"
+waking_window_end = "21:00"
+
+[handoff]
+emergency_terms = ["chest pain", "difficulty breathing", "severe pain", "heavy bleeding", "unconscious"]
+emergency_instruction = "These symptoms need urgent care. Please call your local emergency number or go to urgent care now rather than waiting for an appointment."
+handoff_only = ["insurance claim", "medical advice", "prescription refill", "test results"]
+
+[booking]
+slot_minutes = 15
+confirmation_required = true

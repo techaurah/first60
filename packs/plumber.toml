@@ -1,0 +1,93 @@
+# SwiftFlow Plumbing - fictional business pack for First60.
+# No real business data. Used by the pack tests.
+
+[business]
+name = "SwiftFlow Plumbing"
+vertical = "plumber"
+timezone = "Europe/London"
+currency = "GBP"
+
+[[services]]
+name = "Emergency call-out"
+duration_minutes = 60
+value_tier = "high"
+description = "Urgent visit for leaks, flooding or loss of water."
+
+[[services]]
+name = "Leak repair"
+duration_minutes = 60
+value_tier = "standard"
+description = "Find and fix a leaking pipe, tap or fitting."
+
+[[services]]
+name = "Boiler service"
+duration_minutes = 60
+value_tier = "standard"
+description = "Annual boiler service and safety check."
+
+[[services]]
+name = "Boiler repair"
+duration_minutes = 90
+value_tier = "high"
+description = "Diagnose and repair a faulty boiler."
+
+[[services]]
+name = "Bathroom installation"
+duration_minutes = 240
+value_tier = "high"
+description = "Fit a new bathroom suite."
+
+[[services]]
+name = "Tap replacement"
+duration_minutes = 30
+value_tier = "low"
+description = "Replace a dripping or broken tap."
+
+[[questions]]
+id = "service"
+text = "What plumbing job do you need help with?"
+required = true
+
+[[questions]]
+id = "urgency"
+text = "Is water leaking now, or can it wait for a booked visit?"
+required = true
+
+[[questions]]
+id = "address"
+text = "What is the address of the property?"
+required = true
+
+[[questions]]
+id = "name"
+text = "What is your name?"
+required = true
+
+[[questions]]
+id = "contact"
+text = "What is the best phone number to reach you on?"
+required = true
+
+[hours]
+monday = { open = "08:00", close = "18:00" }
+tuesday = { open = "08:00", close = "18:00" }
+wednesday = { open = "08:00", close = "18:00" }
+thursday = { open = "08:00", close = "18:00" }
+friday = { open = "08:00", close = "18:00" }
+saturday = { open = "09:00", close = "14:00" }
+sunday = { closed = true }
+
+[followups]
+touch_delays_hours = [4, 24, 72]
+max_touches = 3
+waking_window_start = "08:00"
+waking_window_end = "21:00"
+
+[handoff]
+emergency_terms = ["gas smell", "burst pipe", "flooding", "water pouring", "no water"]
+emergency_instruction = "This sounds urgent. Turn off the water at the stopcock if you can do so safely, and if you smell gas, leave the property and call your local gas emergency service."
+handoff_only = ["insurance claim", "landlord dispute"]
+
+[booking]
+slot_minutes = 60
+confirmation_required = true
