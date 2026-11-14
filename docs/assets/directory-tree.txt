@@ -1,0 +1,56 @@
+first60/
+|-- README.md            project overview, build progress, roadmap
+|-- CHANGELOG.md         what shipped, by version
+|-- CONTRIBUTING.md      how to contribute
+|-- SECURITY.md          how to report a vulnerability
+|-- LICENSE              MIT
+|-- DESIGN.md            design doc: positioning, architecture, build steps
+|-- pyproject.toml       packaging, zero dependencies, tool config
+|-- packs/               one TOML business pack per vertical
+|   |-- dental.toml      BrightSmile Dental (fictional demo business)
+|   |-- plumber.toml     SwiftFlow Plumbing
+|   |-- med-spa.toml     GlowHaven Med Spa
+|   |-- clinic.toml      Harborview Family Clinic
+|   `-- real-estate.toml Keystone Homes Realty
+|-- docs/                configuration, safety, packs, channels
+|   |-- configuration.md pack format, init, LLM responder env vars
+|   |-- safety.md        write modes, opt-out, handoff, limits
+|   |-- packs.md         the five shipped packs, writing your own
+|   `-- channels.md      webhook, console, simulated channels
+|-- src/first60/         the package (src layout)
+|   |-- __init__.py      package docstring, __version__ 0.1.0
+|   |-- __main__.py      python -m first60 entry point
+|   |-- cli.py           argparse CLI: demo, serve, summary, init
+|   |-- config.py        pack loader and strict validation
+|   |-- init_pack.py     first60 init: scaffold a starter pack
+|   |-- engine.py        conversation engine: dedupe, qualify, book, follow up
+|   |-- demo.py          scripted scenario on the simulated clock
+|   |-- server.py        stdlib HTTP server: webhook, demo chat, /status
+|   |-- errors.py        closed error-code set
+|   |-- models.py        lead, message, appointment, follow-up, audit row
+|   |-- followups.py     scheduler: caps, waking window, stop conditions
+|   |-- pipeline/        stages, scoring, extraction, qualification, handoff
+|   |-- respond/         template responder (default), optional LLM responder
+|   |-- channels/        webhook, console, simulated
+|   |-- calendar/        local calendar and idempotent booking
+|   `-- store/           SQLite + in-memory under one protocol
+|-- tests/               pytest suite, runs offline (see BUILD-STEP-7.md for count)
+|   |-- test_config.py   pack loader and validation tests
+|   |-- test_imports.py  import and CLI smoke tests
+|   |-- test_stages.py   stage transitions and dedupe
+|   |-- test_scoring.py  scoring components and bands
+|   |-- test_extract.py  service, timeline, contact extraction
+|   |-- test_qualify.py  qualification question flow
+|   |-- test_store_parity.py  one contract, SQLite and in-memory
+|   |-- test_store_sqlite.py  SQLite store specifics
+|   |-- test_calendar.py calendar availability and booking
+|   |-- test_responders.py template and LLM responders
+|   |-- test_handoff.py  handoff triggers and safety templates
+|   |-- test_followups.py follow-up scheduler and reminders
+|   |-- test_channels.py channel protocol and webhook payloads
+|   |-- test_conversation.py engine end-to-end conversations
+|   |-- test_server.py   HTTP server: message, status, demo page
+|   |-- test_pack_paths.py scripted qualification per pack
+|   |-- test_init.py     first60 init and the installed pack layout
+|   `-- test_demo.py     release-gate demo scenario
+`-- .github/workflows/ci.yml   pytest, ruff, mypy on Python 3.11 and 3.12
