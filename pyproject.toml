@@ -1,0 +1,77 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "first60"
+version = "0.1.0"
+description = "First60 is an open-source AI receptionist for service businesses that answers every text enquiry in under a minute, qualifies it against your rules, books the appointment, and follows up until the lead replies or opts out."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "TechAura" }]
+keywords = [
+  "ai-receptionist",
+  "lead-management",
+  "appointment-booking",
+  "ai-agents",
+  "automation",
+  "service-business",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Office/Business",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+  "ruff>=0.6",
+  "mypy>=1.11",
+]
+
+[project.scripts]
+first60 = "first60.cli:main"
+
+[project.urls]
+Homepage = "https://techaurah.com"
+Repository = "https://github.com/techaurah/first60"
+Issues = "https://github.com/techaurah/first60/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/first60"]
+# The builtin packs are data, not code: ship them inside the
+# installed package (site-packages/first60/packs) so an
+# installed-from-PyPI copy can load a builtin pack. config.py
+# looks inside the package first, then at the repo root.
+force-include = { "packs" = "first60/packs" }
+
+[tool.hatch.build.targets.sdist]
+packages = ["src/first60"]
+force-include = { "packs" = "packs" }
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.11"
+mypy_path = "src"
+ignore_missing_imports = true
+warn_unused_ignores = false
+check_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
