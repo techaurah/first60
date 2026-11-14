@@ -1,0 +1,87 @@
+# GlowHaven Med Spa - fictional business pack for First60.
+# No real business data. Used by the pack tests.
+
+[business]
+name = "GlowHaven Med Spa"
+vertical = "med-spa"
+timezone = "America/New_York"
+currency = "USD"
+
+[[services]]
+name = "Signature facial"
+duration_minutes = 60
+value_tier = "standard"
+description = "Deep-cleanse facial tailored to your skin."
+
+[[services]]
+name = "Laser hair removal"
+duration_minutes = 45
+value_tier = "high"
+description = "Laser hair removal session, patch test first for new clients."
+
+[[services]]
+name = "Botox consultation"
+duration_minutes = 30
+value_tier = "high"
+description = "Consultation with a licensed practitioner before any treatment."
+
+[[services]]
+name = "Chemical peel"
+duration_minutes = 45
+value_tier = "standard"
+description = "Exfoliating peel for brighter, smoother skin."
+
+[[services]]
+name = "Massage therapy"
+duration_minutes = 60
+value_tier = "standard"
+description = "Relaxation or deep-tissue massage."
+
+[[questions]]
+id = "service"
+text = "Which treatment are you interested in?"
+required = true
+
+[[questions]]
+id = "timeline"
+text = "When would you like to come in?"
+required = true
+
+[[questions]]
+id = "name"
+text = "What is your name?"
+required = true
+
+[[questions]]
+id = "contact"
+text = "What is the best phone number or email to reach you on?"
+required = true
+
+[[questions]]
+id = "skin_concern"
+text = "Is there anything about your skin or health we should know before your visit?"
+required = false
+
+[hours]
+monday = { open = "10:00", close = "19:00" }
+tuesday = { open = "10:00", close = "19:00" }
+wednesday = { open = "10:00", close = "19:00" }
+thursday = { open = "10:00", close = "20:00" }
+friday = { open = "10:00", close = "19:00" }
+saturday = { open = "09:00", close = "17:00" }
+sunday = { closed = true }
+
+[followups]
+touch_delays_hours = [4, 24, 72]
+max_touches = 3
+waking_window_start = "08:00"
+waking_window_end = "21:00"
+
+[handoff]
+emergency_terms = ["severe pain", "severe swelling", "swelling", "burn", "allergic reaction", "blistering", "difficulty breathing"]
+emergency_instruction = "This sounds like a reaction that needs prompt attention. Please seek urgent medical care right away and tell them what treatment you had."
+handoff_only = ["refund request", "complaint about treatment", "medical advice"]
+
+[booking]
+slot_minutes = 30
+confirmation_required = true
